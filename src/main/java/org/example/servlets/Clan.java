@@ -3,8 +3,10 @@ package org.example.servlets;
 public class Clan {
     private long id;     // id клана
     private String name; // имя кланаñ
-    private volatile int gold;    // текущее количество золота в казне клана
+
+    private  int gold;    // текущее количество золота в казне клана
                                 //volatile для обеспечения видимости изменений в потоках
+
 
 
     public synchronized void addToGold(int amount) {
